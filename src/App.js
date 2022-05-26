@@ -1,24 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import './index.css';
+
+import React from 'react';
+import { Home } from './components/Pages/Home/Home';
+import {AboutUS} from './components/Pages/AboutUS/AboutUS'
+import {ContactUS} from './components/Pages/ContactUS/ContactUS'
+import {NotFound} from './components/Pages/NotFound/NotFound'
+import {Route, Routes} from 'react-router-dom'
+import {Navigator} from './components/UI/Navigator/Navigator'
+import {UseEffectUI} from './components/UI/UseEffectUI/UseEffectUI'
+import {UseStateUI} from './components/UI/UseStateUI/UseStateUI'
+import { UseCustomUI } from './components/UI/UseCustomUI/UseCustomUI';
+import { RickAndMorty } from './components/UI/RickAndMorty/RickAndMorty';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navigator/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/aboutUS' element={<AboutUS/>}/>
+        <Route path='/contactUS' element={<ContactUS/>}/>
+        <Route path='*' element={<NotFound/>}/>
+        <Route path='/useEffect' element={<UseEffectUI/>}/>
+        <Route path='/useState' element={<UseStateUI/>}/>
+        <Route path='/useCustom' element={<UseCustomUI/>}/>
+        <Route path='/rickAndMorty' element={<RickAndMorty/>}/>
+      </Routes>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+    // <div>
+    //   <Home/>
+    //   <AboutUS/>
+    //   <ContactUS/>
+    //   <NotFound/>
+    // </div>
+
   );
 }
 
