@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Button } from '../Button/Button'
 
 
@@ -21,7 +21,15 @@ export const ButtonUI = () => {
     }
   
 
-   
+    useEffect(()=>{
+        const imgColor=document.querySelector('.img-balon')
+        if (counter>=10) {
+            imgColor.classList.add("img-balon-color")
+        }else{
+            imgColor.classList.remove("img-balon-color")
+        }
+  
+      },[counter])
     return (
 
         <>
