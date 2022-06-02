@@ -177,3 +177,51 @@ h2{
   -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
+/* **********************Rick And Morty****************** */
+.bodyMorty{
+  background-color: #000;
+  height: auto;
+}
+.logo_morty {
+	width: 22rem;
+	margin: 4rem auto;
+}
+.logo_morty img{
+  width: 100%;
+}
+.filtrar_morty {
+	width: 100%;
+	max-width: 60rem;
+	margin: 0 auto;
+	margin-bottom: 4rem;
+}
+
+.filtrar_morty input {
+	height: 4rem;
+	border: none;
+	border-radius: 0.5rem;
+	padding: 0 1rem;
+	outline: var(--color-primary);
+	width: 100%;
+}
+.tarjetas{
+  display: grid;
+  grid-template-columns: repeat(3, 0fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 35px;
+  grid-row-gap: 0px;
+}
+.card{
+  border: 4px solid wheat;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  margin: 3px;
+}
+.card h2{
+  color: #fff;
+  font-size: 20px;
+	text-align: center;
+}
