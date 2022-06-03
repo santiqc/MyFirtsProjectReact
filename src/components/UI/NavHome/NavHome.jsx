@@ -7,7 +7,7 @@ export const NavHome = () => {
       <Link to="/useCustom" className="enlace">UseCustom</Link>
       <Link to="/useEffect" className="enlace">UseEffect</Link>
       <Link to="/rickAndMorty" className="enlace">Rick and Morty</Link>
-    
+      <Link to="/thenorApi" className="enlace">ThenorApi</Link>
     </nav>
   );
 };

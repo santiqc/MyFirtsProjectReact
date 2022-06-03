@@ -11,7 +11,7 @@ import {UseEffectUI} from './components/UI/UseEffectUI/UseEffectUI'
 import {UseStateUI} from './components/UI/UseStateUI/UseStateUI'
 import { UseCustomUI } from './components/UI/UseCustomUI/UseCustomUI';
 import { RickAndMorty } from './components/UI/RickAndMorty/RickAndMorty';
-
+import { ThenorApi } from './components/UI/ThenorApi/ThenorApi'
 
 function App() {
   return (
@@ -26,6 +26,8 @@ function App() {
         <Route path='/useState' element={<UseStateUI/>}/>
         <Route path='/useCustom' element={<UseCustomUI/>}/>
         <Route path='/rickAndMorty' element={<RickAndMorty/>}/>
+        <Route path='/thenorApi' element={<ThenorApi/>}/>
+
       </Routes>
     </div>
 

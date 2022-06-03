@@ -1,10 +1,9 @@
 import React from 'react'
+import ContactUSEmail from '../../layouts/ContactUSEmail/ContactUSEmail'
 
 export const ContactUS = () => {
   return (
-    <div>
-      <h1>ContactUS</h1>
-    </div>
+    <ContactUSEmail/>
   )
 }
 
