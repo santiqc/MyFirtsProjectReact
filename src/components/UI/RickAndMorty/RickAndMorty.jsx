@@ -69,7 +69,7 @@ export const RickAndMorty = () => {
         <input
           name="buscar"
           onKeyUp={handleInput}
-          placeholder="Nombre del personaje"
+          placeholder="Character's Name..."
           type="text"
           id="input"
         />

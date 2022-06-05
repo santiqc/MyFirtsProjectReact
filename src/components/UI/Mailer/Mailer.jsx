@@ -8,13 +8,16 @@ export const Mailer = () => {
       emailjs.sendForm('service_jt1oons','template_88umcgl',event.target,'18IHO-Ep4xSiS73ze')
       .then(response => console.log(response))
       .catch(error => console.log(error))
+      alert("mensaje enviado")
     }
+    
   
     return (
       <div className='div-form'>
         <h1 className='title-form'>Contact Us</h1>
         <form className='form-mail' onSubmit={sendEmail}>
           <label>Name</label>
+          <br />
           <input type="text" name='user_name' />
           <hr />
   
