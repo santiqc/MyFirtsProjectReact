@@ -50,7 +50,6 @@ export const ThenorApi = () => {
               {gifs.map(gif => (
                 <Gif
                   img={gif.media[0].tinygif.url}
-                  key={gif.id}
                 />
               ))}
             </div>
