@@ -8,6 +8,7 @@ export const NavHome = () => {
       <Link to="/useEffect" className="enlace">UseEffect</Link>
       <Link to="/rickAndMorty" className="enlace">Rick and Morty</Link>
       <Link to="/thenorApi" className="enlace">ThenorApi</Link>
+      <Link to="/giphyApi" className="enlace">GiphyApi</Link>
     </nav>
   );
 };
